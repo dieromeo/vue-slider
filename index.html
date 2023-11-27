@@ -24,16 +24,15 @@
                         <p> {{ slides[currentIndex].text }} </p>
                     </div>
                 </div>
-                <div class="prev" @click="prev"></div>
-                <div class="next" @click="next"></div>
             </div>
             <div class="thumbnail">
+                <div class="prev" @click="prev"></div>
+                <div class="next" @click="next"></div>
                 <img v-for="(image, segnaposto) in slides"
                     :class="segnaposto === currentIndex ? 'thumbnail-active' : ''" class="thumbnail-img"
-                    :src="slides[segnaposto].image" :alt="`Immagine ${segnaposto}`">
+                    :src="slides[segnaposto].image" :alt="`Immagine ${segnaposto}`" @click="changeActive(segnaposto)">
             </div>
         </div>
-
     </div>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>

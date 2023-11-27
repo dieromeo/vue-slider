@@ -91,6 +91,7 @@ img.active {
 .thumbnail {
     height: 300px;
     width: 140px;
+    position: relative;
 }
 
 .thumbnail-img {
