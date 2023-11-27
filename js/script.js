@@ -49,5 +49,9 @@ createApp({
         changeActive(index) {
             this.currentIndex = index;
         }
+    },
+    mounted() {
+        setInterval(this.next, 3000);
     }
 }).mount('#app');
+

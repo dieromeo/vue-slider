@@ -107,7 +107,7 @@ img.active {
     border: 2px solid yellow;
 }
 
-[v-clock] {
+[v-cloak] {
     display: none;
 }
 

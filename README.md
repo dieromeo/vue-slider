@@ -6,3 +6,4 @@ Utilizzando la struttura base nello slider, andiamo a creare con un v-for le cop
 Andiamo ad aggiungere un evento click a prev e next, con cui incrementare o decrementre l'index.
 
 Nello stesso modo creiamo le thumbnail, a cui inseriamo un evento click per mostrare l'immagine corrispondente alla thumbnail cliccata.
+Nell javascript, nella parte `mounted` che agisce dopo la creazione dell'app, inseriamo una funzione che fa da autoplay ogni 3 secondi dal caricamento della pagina.
