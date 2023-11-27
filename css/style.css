@@ -112,3 +112,11 @@ img.active {
 [v-clock] {
     display: none;
 }
+
+.image-info {
+    color: white;
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    left: 0;
+}
