@@ -28,6 +28,9 @@
                 <div class="next" @click="next"></div>
             </div>
             <div class="thumbnail">
+                <img v-for="(image, segnaposto) in slides"
+                    :class="segnaposto === currentIndex ? 'thumbnail-active' : ''" class="thumbnail-img"
+                    :src="slides[segnaposto].image" :alt="`Immagine ${segnaposto}`">
             </div>
         </div>
 
