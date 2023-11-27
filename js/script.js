@@ -1,4 +1,4 @@
-
+'use strict';
 
 const { createApp } = Vue;
 
@@ -29,6 +29,7 @@ createApp({
                 },
             ],
             currentIndex: 0,
+            interval: 0,
         };
     },
     methods: {
@@ -48,10 +49,20 @@ createApp({
 
         changeActive(index) {
             this.currentIndex = index;
+        },
+
+        overStop() {
+            console.log('sono sopra');
+            clearInterval(this.interval)
+        },
+
+        setTimer() {
+            this.interval = setInterval(this.next, 3000);
         }
     },
     mounted() {
-        setInterval(this.next, 3000);
+        this.setTimer();
     }
 }).mount('#app');
+
 

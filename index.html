@@ -15,7 +15,7 @@
     <div id="app" v-cloak>
 
         <div class="container">
-            <div class="items">
+            <div class="items" @mouseover="overStop" @mouseout="setTimer">
                 <div class="item ">
                     <img v-for="(image, segnaposto) in slides" :class="segnaposto === currentIndex ? 'active' : ''"
                         :src="slides[segnaposto].image" :alt="`Immagine ${segnaposto}`">
